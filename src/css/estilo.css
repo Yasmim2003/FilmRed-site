@@ -1,0 +1,136 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1050px;
+    margin: 0 auto; /*o px dos lados speriores e centralizado nos lados */
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+.cabecalho .logo{
+    width: 30%;
+    display: block;
+}
+
+.cabecalho .menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.cabecalho nav li a{
+    font-weight: bold;
+    color : #fff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s; /*transicao entre as tags a. Influencia no efeito hover*/
+}
+
+.cabecalho nav li a:hover{
+    background-color: #d51819;
+}
+
+.imagem-titulo{
+    width: 52%;
+}
+
+.container{
+    margin-top: 100px;
+    height: calc(100vh - 220px); /*calcula o tamanho da tela de forma versinada e coloca um espaço de 100*/
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center;
+}
+.luffy{
+    padding-top: -20px;
+    width: 25%;
+    height: calc(100vh - 220px);
+    
+}
+
+.container .descricao{
+    color: #a8adb7;
+    width: 87%;
+    font-size: 12px;
+    margin: 30px 0;
+    padding-right: 50px;
+}
+
+.container .trailer{
+     background-color: red;
+     color: white;
+     padding: 13px;
+     font-size: 12px;
+     font-weight: bold;
+     cursor: pointer;
+     text-transform: uppercase;
+     border: 0;
+     transition: 0.5s all ease-in-out;
+}
+
+.container .trailer:hover{
+    transform: scale(1.1);
+}
+
+.fundo-video{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.fundo-video .video{
+    height: 100vh;
+    width: 100%;
+}
+.fundo-video::after{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
+}
+
+.modal{
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+}
+
+.conteudo-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap:15px;
+}
+
+.fechar-modal{
+    background-color: rgb(207, 205, 205);
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.modal.aberto{
+    opacity: 1;
+    visibility: visible;
+}
+

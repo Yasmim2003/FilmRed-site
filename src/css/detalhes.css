@@ -1,0 +1,80 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1050px;
+    margin: 0 auto; 
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+.cabecalho .logo{
+    width: 30%;
+    display: block;
+}
+
+.cabecalho .menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.cabecalho nav li a{
+    font-weight: bold;
+    color : #fff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s; /*transicao entre as tags a. Influencia no efeito hover*/
+}
+
+.cabecalho nav li a:hover{
+    background-color: #d51819;
+}
+
+.imagem-titulo{
+    width: 52%;
+}
+
+body{
+    background-color: #751813;
+}
+
+.capa-filme{
+    height: 94%;
+    width: 30%;
+}
+
+.container{
+    margin: 0px 120px 0px 120px;
+    display: flex;
+    height: calc(100vh - 210px);
+    font-size: 14px;
+    color:white;
+}
+
+.resumo-filme{
+    margin-top: 60px;
+    width: 50%;
+    padding: 0px 80px;
+    text-align: justify;
+}
+.resumo-filme .duracao{
+    margin-top: 20px;
+}
+
+.contribuicoes{
+    margin-top: 60px;
+    font-size: 14px;
+}
+.contribuicoes p{
+   margin: 10px 0px;
+ }
+
+ #primeiro-cargo{
+    margin-top: -1px;
+ }
+
+ 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400&family=Pridi&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/imagens/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <title>One Piece red</title>
+</head>
+
+<body>
+    <div class="fundo-video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/One Piece Film Red - Official Trailer 3 _ AniTV.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="cabecalho">
+        <a>
+            <img class="logo" src="./src/imagens/logo_one_piece.png" alt="logo">
+        </a>
+        <nav>
+           <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./detalhes.html">Detalhes</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="informacoes">
+            <img class="imagem-titulo" src="./src/imagens/titulo.png" alt="imagem do titulo do filme">
+            <p class="descricao">Em One Piece Film RED todos conhecerão Uta, a cantora mais amada do planeta, cuja voz foi descrita como “de outro mundo”. Ela é conhecida por esconder sua própria identidade ao se apresentar. Agora, pela primeira vez, Uta se revelará ao mundo em um show ao vivo. Com a Marinha assistindo de perto, o local se enche de fãs de Uta - incluindo piratas animados e os Chapéus de Palha liderados por Luffy, que vieram para curtir sua performance - todos aguardam ansiosamente a voz que o mundo inteiro estava esperando.</p>
+            <button class="trailer">veja o trailer</button>
+        </div>
+        <img class="luffy" src="./src/imagens/capa.png" alt="luffy">
+      <div class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar-modal">X</span>
+            <iframe id="video" width="500" height="360" src="https://www.youtube.com/embed/JvqcaQJgr-A" title="Video Film Red" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
